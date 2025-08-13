@@ -8,7 +8,7 @@ This project leverages NVIDIA CUDA and OpenCL for high-performance GPU computing
 
 ## Dependencies
 
-Before building or running the project, ensure the following dependencies are installed:
+Before running the project, ensure the following dependencies are installed:
 
 ```bash
 sudo apt update
@@ -22,6 +22,9 @@ sudo apt install g++-12 nvidia-cuda-toolkit build-essential libssl-dev ocl-icd-o
 - **ocl-icd-opencl-dev**: OpenCL development files for cross-vendor GPU support.
 
 ## Supported NVIDIA GPU Compute Capabilities
+
+For a full and up-to-date list of NVIDIA GPU compute capabilities, see the official documentation:
+https://developer.nvidia.com/cuda-gpus
 
 | GPU Series      | Compute Capability |
 |-----------------|-------------------|
