@@ -23,7 +23,7 @@ sudo apt install g++-12 nvidia-cuda-toolkit build-essential libssl-dev ocl-icd-o
 
 ## Supported NVIDIA GPU Compute Capabilities
 
-For a full and up-to-date list of NVIDIA GPU compute capabilities, see the official documentation:
+For a full and up-to-date list of NVIDIA GPU compute capabilities, see the official documentation:  
 https://developer.nvidia.com/cuda-gpus
 
 | GPU Series      | Compute Capability |
