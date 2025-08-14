@@ -1,10 +1,11 @@
-# VanitySearch-binarys
+# VanitySearch Binary
+
 
 ## Overview
 
-These binaries are built from [VanitySearch](https://github.com/JeanLucPons/VanitySearch) by Jean-Luc Pons.
+This binary was built from [parkour86/VanitySearch](https://github.com/parkour86/VanitySearch), a fork of the original VanitySearch by Jean-Luc Pons [JeanLucPons/VanitySearch](https://github.com/JeanLucPons/VanitySearch).
 
-This project leverages NVIDIA CUDA and OpenCL for high-performance GPU computing. It is compatible with a wide range of NVIDIA GPUs, from GTX 10-series to RTX 50-series, and is designed to be built and run on Linux systems.
+This project leverages NVIDIA CUDA and OpenCL for high-performance GPU computing. The provided binary is compatible with all NVIDIA GPUs listed below (from GTX 10-series to RTX 50-series, including H100/H200), and is designed to be built and run on Linux systems.
 
 ## Dependencies
 
@@ -12,10 +13,10 @@ Before running the project, ensure the following dependencies are installed:
 
 ```bash
 sudo apt update
-sudo apt install g++-12 nvidia-cuda-toolkit build-essential libssl-dev ocl-icd-opencl-dev
+sudo apt install g++-9 nvidia-cuda-toolkit build-essential libssl-dev ocl-icd-opencl-dev
 ```
 
-- **g++-12**: C++ compiler for building the project.
+- **g++-9**: C++ compiler for building the project.
 - **nvidia-cuda-toolkit**: Provides CUDA libraries and tools for GPU acceleration.
 - **build-essential**: Essential compilation tools (gcc, make, etc.).
 - **libssl-dev**: SSL library development files (if your project uses secure connections).
@@ -23,20 +24,25 @@ sudo apt install g++-12 nvidia-cuda-toolkit build-essential libssl-dev ocl-icd-o
 
 ## Supported NVIDIA GPU Compute Capabilities
 
-For a full and up-to-date list of NVIDIA GPU compute capabilities, see the official documentation:  
-https://developer.nvidia.com/cuda-gpus
+This binary is compatible with all the following NVIDIA GPU compute capabilities:
 
-| GPU Series      | Compute Capability |
-|-----------------|-------------------|
-| GTX 10-series   | 6.1               |
-| RTX 20-series   | 7.5               |
-| RTX 30-series   | 8.6               |
-| RTX 40-series   | 8.9               |
-| RTX 50-series   | 12.0              |
+| Compute Capability | NVIDIA Series     |
+|--------------------|-------------------|
+| 6.0, 6.1           | GTX 10-series     |
+| 7.0                | RTX 20-series     |
+| 8.0, 8.6           | RTX 30-series     |
+| 8.9                | RTX 40-series     |
+| 9.0                | H100, H200        |
+| 12.0               | RTX 50-series     |
+
+For a full and up-to-date list of NVIDIA GPU compute capabilities, see the official documentation:
+https://developer.nvidia.com/cuda-gpus
 
 ## Usage
 
-Instructions for running the project will depend on your implementation. Please refer to the documentation or source files for details.
+To run the binary, simply execute it on a Linux system with a supported NVIDIA GPU and the required dependencies installed. No separate binaries are needed for different GPU series; this single binary supports all listed compute capabilities.
+
+For advanced usage or configuration, refer to the original [VanitySearch documentation](https://github.com/JeanLucPons/VanitySearch).
 
 ## License
 
