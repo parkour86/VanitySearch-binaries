@@ -7,6 +7,8 @@ This binary was built from [parkour86/VanitySearch](https://github.com/parkour86
 
 This project leverages NVIDIA CUDA and OpenCL for high-performance GPU computing. The provided binary is compatible with all NVIDIA GPUs listed below (from GTX 10-series to RTX 50-series, including H100/H200), and is designed to be built and run on Linux systems.
 
+**Note:** This binary was compiled with **CUDA 12.8** for maximum compatibility with the latest NVIDIA GPUs.
+
 ## Dependencies
 
 Before running the project, ensure the following dependencies are installed:
